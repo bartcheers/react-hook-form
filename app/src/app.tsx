@@ -42,6 +42,7 @@ import './style.css';
 import FormComponent from './form';
 import DisabledFields from './disabledFields';
 import ResetKeepDirty from './resetKeepDirty';
+import { FormStateSubscribeExample } from './formStateSubscribe';
 
 const App = () => {
   return (
@@ -108,6 +109,10 @@ const App = () => {
         <Route path="/autoUnregister" element={<AutoUnregister />} />
         <Route path="/useWatch" element={<UseWatch />} />
         <Route path="/useFormState" element={<UseFormState />} />
+        <Route
+          path="/formStateSubscribe"
+          element={<FormStateSubscribeExample />}
+        />
         <Route path="/useFieldArrayNested" element={<UseFieldArrayNested />} />
         <Route
           path="/watchUseFieldArrayNested"
